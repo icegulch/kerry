@@ -1,0 +1,35 @@
+---
+permalink: "/post/index.html"
+layout: "base.liquid"
+---
+
+<form
+  name="kerryposts"
+  method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/post/thank-you/">
+  <p class="sr-only">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
+  <div>
+    <label for="title" style="display:block">
+      Post Title
+    </label>
+    <input id="title" type="text" name="title" class="form-control" required>
+  </div>
+  <div>
+    <label
+      for="body"
+      style="display:block">
+      Post body
+    </label>
+  </div>
+  <textarea
+    id="body"
+    name="body"
+    rows="10" class="form-control"
+    required></textarea>
+  <div>
+    <button type="submit" class="btn btn-primary">
+      Post
+    </button>
+  </div>
+</form>
