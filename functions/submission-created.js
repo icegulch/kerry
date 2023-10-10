@@ -13,7 +13,7 @@ exports.handler = async (event) => {
 
     // GitHub repository information
     const repoOwner = 'icegulch';
-    const repoName = 'prototype';
+    const repoName = 'kerry';
     const filePath = 'src/_data/posts.json';
 
     // Fetch the GitHub PAT from Netlify environment variables
