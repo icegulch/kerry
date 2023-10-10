@@ -2,8 +2,7 @@ exports.handler = async (event) => {
   try {
     // Extract form submission data
     const submissionData = JSON.parse(event.body).payload;
-    console.log(submissionData);
-
+    
     // Prepare the simplified data
     const simplifiedData = {
       id: submissionData.id,
@@ -11,7 +10,8 @@ exports.handler = async (event) => {
       title: submissionData.data.title,
       body: submissionData.data.body,
     };
-
+    console.log(simplifiedSubmissionData);
+    
     // GitHub repository information
     const repoOwner = 'icegulch';
     const repoName = 'kerry';
