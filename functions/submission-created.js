@@ -8,7 +8,7 @@ exports.handler = async (event) => {
       id: submissionData.id,
       created_at: submissionData.created_at,
       title: submissionData.data.title,
-      body: submissionData.data.body,
+      post_body: submissionData.data.post_body,
     };
     console.log(simplifiedSubmissionData);
     
