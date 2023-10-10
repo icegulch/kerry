@@ -15,9 +15,9 @@ layout: base.liquid
       <time pubdate="{{ post.created_at }}" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:0.025rem;">
         {{ post.created_at | date: "%A, %B %-d, %Y @ %H:%M" }} UTC
       </time>
-      {% if post.body %}
+      {% if post.post_body %}
       <div class="post-body">
-        {{ post.body | markdownify }}
+        {{ post.post_body | markdownify }}
       </div>
     {% endif %}
     </li>
